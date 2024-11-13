@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_ordering__orders
+    description: This model extracts and transforms raw order data to provide a detailed view of each order, including customer and product information, order date, and financial details.
+    access: public
+    columns:
+      - name: order_id
+        description: A unique identifier for each order.
+      - name: customer_id
+        description: The identifier for the customer who placed the order.
+      - name: product_id
+        description: The identifier for the product that was ordered.
+      - name: order_date
+        description: The date when the order was placed.
+      - name: quantity
+        description: The number of units of the product ordered.
+      - name: unit_price
+        description: The price per unit of the product at the time of the order.
+      - name: delivery_id
+        description: A unique identifier for the delivery associated with the order.
+      - name: total_amount
+        description: The total monetary value of the order, calculated as quantity multiplied by unit price.
