@@ -1,0 +1,4 @@
+order_id,customer_id,product_id,order_date,quantity,unit_price,delivery_id
+O001,C001,P001,2024-01-01,50,45.99,D001
+O002,C002,P002,2024-01-01,200,35.99,D002
+O003,C003,P001,2024-01-01,75,45.99,D003
