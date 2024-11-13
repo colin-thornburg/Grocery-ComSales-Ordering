@@ -1,0 +1,16 @@
+models:
+  - name: mart_customer_orders
+    description: This model aggregates customer order data to provide insights into customer purchasing behavior and contribution. It summarizes total orders, spending, and delivery costs per customer.
+    columns:
+      - name: customer_id
+        description: A unique identifier for each customer.
+      - name: total_orders
+        description: The total number of distinct orders placed by the customer.
+      - name: total_spend
+        description: The total amount spent by the customer across all orders.
+      - name: avg_order_quantity
+        description: The average quantity of items per order for the customer.
+      - name: total_delivery_cost
+        description: The total cost incurred for delivering the customer's orders.
+      - name: customer_contribution
+        description: The net contribution of the customer, calculated as total spend minus total delivery cost.
